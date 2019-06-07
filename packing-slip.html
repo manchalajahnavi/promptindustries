@@ -1,0 +1,361 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Prompt Industries</title>
+	<style>
+		.invoice-box {
+		        max-width: 800px;
+		        margin: auto;
+		        padding: 30px;
+		        border: 1px solid #eee;
+		        box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+		        font-size: 16px;
+		        line-height: 24px;
+		        font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+		        color: #555;
+		    }
+		    .invoice-box table {
+		        width: 100%;
+		        line-height: inherit;
+		        text-align: left;
+		    }
+		    .invoice-box table td {
+		        padding-left: 5px;
+		        vertical-align: top;
+		    }
+		   .invoice-box table tr.top table td {
+		        padding-bottom: 0px;
+		    }
+		    .invoice-box table tr.top table td.title {
+		        font-size: 45px;
+		        line-height: 45px;
+		        color: #333;
+		    }
+		    .invoice-box table tr.information table td {
+		        padding-bottom: 40px;
+		    }
+		    .invoice-box table tr.heading td {
+		        background: #eee;
+		        border-bottom: 1px solid #ddd;
+		        font-weight: bold;
+		    }
+		    .invoice-box table tr.details td {
+		        padding-bottom: 20px;
+		    }
+		    
+		    .invoice-box table tr.item td{
+		        border-bottom: 1px solid #eee;
+		    }
+		    
+		    .invoice-box table tr.item.last td {
+		        border-bottom: none;
+		    }
+		    
+		    .invoice-box table tr.total td:nth-child(2) {
+		        border-top: 2px solid #eee;
+		        font-weight: bold;
+		    }
+		    @media only screen and (max-width: 600px) {
+		        .invoice-box table tr.top table td {
+		            width: 100%;
+		            display: block;
+		            text-align: center;
+		        }
+		        
+		        .invoice-box table tr.information table td {
+		            width: 100%;
+		            display: block;
+		            text-align: center;
+		        }
+		    }
+			/** RTL **/
+		    .rtl {
+		        direction: rtl;
+		        font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+		    }
+		    .rtl table {
+		        text-align: right;
+		    }
+		    .rtl table tr td:nth-child(2) {
+		        text-align: left;
+		    }
+			.table_border td {
+			 border: 1px solid black;
+		  border-collapse: collapse;
+			}
+			.table_border th {
+			 border: 1px solid black;
+		  border-collapse: collapse;
+		  text-align:center;
+			}
+			.table_border  {
+			 
+		  border-collapse: collapse;
+			}
+			.text-center {
+			text-align:center;
+			}
+	</style>
+</head>
+<body>
+	<div class="invoice-box">
+		<table cellpadding="0" cellspacing="0" style="border:1px solid #aaa;border-bottom:0px solid #fff;">
+			<tr>
+				<td colspan="" style="text-align:center;">
+					<h4 style="text-decoration:underline;font-size:14px;margin:5px;">PACKING SLIP</h4>
+				</td>
+			</tr>
+		</table>
+		<table cellpadding="0" cellspacing="0" style="border:1px solid #aaa;border-bottom:0px solid #fff;">
+			<tr class="top">
+				<td colspan="2">
+					<table>
+						<tr>
+							<td style="text-align:center">
+								<h4 style="margin:5px;">PROMPT INDUSTRIES PVT.LTD.</h4>
+								<p style="margin:5px;">Sy No. 816 (V) patancheru (M) Medak District Telangana-502329</p>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<table cellpadding="0" cellspacing="0" style="border:1px solid #aaa;border-bottom:0px solid #fff;">
+			<tr class="top">
+				<td>
+					<table>
+						<tr>
+							<td>Sl No</td>
+							<th>: NA</th>
+						</tr>
+						<tr>
+							<td>To</td>
+							<th>: Asia carbon industry co.ltd 415 samadum rd.</th>
+						</tr>
+						<tr>
+							<td>City</td>
+							<th>: Bangkok</th>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<th>&nbsp;</th>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<th>&nbsp;</th>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<td>Date</td>
+							<th>: 12-Aug-2019</th>
+						</tr>
+						<tr>
+							<td>P.S.No</td>
+							<th>: DC10820
+								<th>
+						</tr>
+						<tr>
+							<td>Vehicle No</td>
+							<th>: TS12UA4466</th>
+						</tr>
+						<tr>
+							<td>Contaiiner</td>
+							<th>: TJII567987</th>
+						</tr>
+						<tr>
+							<td>Lc No</td>
+							<th>: 1181DFRG567</th>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<table class="table_border">
+			<tr>
+				<th>SNO</th>
+				<th>Description Of Goods</th>
+				<th>Reel No</th>
+				<th>Weight</th>
+				<th>Gsm</th>
+				<th>Size</th>
+			</tr>
+			<tr>
+				<td class="text-center">1</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+			</tr>
+			<tr>
+				<td class="text-center">2</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+			</tr>
+			<tr>
+				<td class="text-center">3</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+			</tr>
+			<tr>
+				<td class="text-center">4</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+			</tr>
+			<tr>
+				<td class="text-center">5</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+			</tr>
+			<tr>
+				<td class="text-center">6</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+			</tr>
+			<tr>
+				<td class="text-center">7</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+			</tr>
+			<tr>
+				<td class="text-center">8</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+			</tr>
+			<tr>
+				<td class="text-center">9</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+			</tr>
+			<tr>
+				<td class="text-center">10</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+			</tr>
+			<tr>
+				<td class="text-center">11</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+			</tr>
+			<tr>
+				<td class="text-center">12</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+			</tr>
+			<tr>
+				<td class="text-center">13</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+			</tr>
+			<tr>
+				<td class="text-center">14</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+			</tr>
+			<tr>
+				<td class="text-center">15</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+			</tr>
+			<tr>
+				<td class="text-center">16</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+			</tr>
+			<tr>
+				<td class="text-center">17</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+			</tr>
+			<tr>
+				<td class="text-center">18</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+			</tr>
+			<tr>
+				<td class="text-center">19</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+			</tr>
+			<tr>
+				<td class="text-center">20</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+			</tr>
+			<tr>
+				<td class="text-center">21</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+				<td>xxxxx</td>
+			</tr>
+			<tr>
+				<td colspan="5">&nbsp;</td>
+				<td>Total : xxxxx</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
